@@ -1,0 +1,19 @@
+﻿<Application x:Class="Windows7_TaskBar.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="ThumbnailButtons.xaml" Startup="Application_Startup">
+    <Application.Resources>
+         
+    </Application.Resources>
+    
+    <JumpList.JumpList>
+        <JumpList ShowFrequentCategory="True"
+                  ShowRecentCategory="True">
+            <JumpTask Title="Notepad"  
+                   Description="Run Notepad"
+                   ApplicationPath="c:\windows\notepad.exe"/>
+            <JumpPath CustomCategory="Test"
+                      Path="c:\temp\test.lbl"/>
+        </JumpList>
+    </JumpList.JumpList>
+</Application>
